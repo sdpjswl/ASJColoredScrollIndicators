@@ -26,7 +26,8 @@
 
 @property (copy, nonatomic) NSSet *scrollIndicators;
 
-- (void)applyScrollIndicatorColor;
+- (void)asj_setup;
+- (void)asj_applyScrollIndicatorColor;
 
 @end
 
@@ -36,7 +37,7 @@
 {
   self = [super init];
   if (self) {
-    [self setup];
+    [self asj_setup];
   }
   return self;
 }
@@ -45,12 +46,14 @@
 {
   self = [super initWithCoder:coder];
   if (self) {
-    [self setup];
+    [self asj_setup];
   }
   return self;
 }
 
-- (void)setup
+#pragma mark - Setup
+
+- (void)asj_setup
 {
   [self addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
 }
@@ -70,12 +73,14 @@
     [subviewsWithIndicator minusSet:subviewsWithoutIndicator];
     _scrollIndicators = [NSSet setWithSet:subviewsWithIndicator];
     
-    [self applyScrollIndicatorColor];
+    [self asj_applyScrollIndicatorColor];
     [self removeObserver:self forKeyPath:@"contentOffset"];
   }
 }
 
-- (void)applyScrollIndicatorColor
+#pragma mark - Color indicators
+
+- (void)asj_applyScrollIndicatorColor
 {
   if (!_scrollIndicatorColor) {
     return;

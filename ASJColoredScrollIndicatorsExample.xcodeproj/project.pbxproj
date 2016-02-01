@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BA7A6541C5F18A0008B47FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA7A6521C5F18A0008B47FA /* LaunchScreen.xib */; };
 		C0DEEFB21C3D308F009B031A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEEFB11C3D308F009B031A /* main.m */; };
 		C0DEEFB51C3D308F009B031A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEEFB41C3D308F009B031A /* AppDelegate.m */; };
 		C0DEEFB81C3D308F009B031A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEEFB71C3D308F009B031A /* ViewController.m */; };
 		C0DEEFBB1C3D3090009B031A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0DEEFB91C3D308F009B031A /* Main.storyboard */; };
 		C0DEEFBD1C3D3090009B031A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0DEEFBC1C3D3090009B031A /* Assets.xcassets */; };
-		C0DEEFC01C3D3090009B031A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0DEEFBE1C3D3090009B031A /* LaunchScreen.storyboard */; };
 		C0DEEFCA1C3D3162009B031A /* ASJTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEEFC91C3D3162009B031A /* ASJTableView.m */; };
 		C0DEEFCD1C3D3170009B031A /* ASJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEEFCC1C3D3170009B031A /* ASJScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6BA7A6531C5F18A0008B47FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C0DEEFAD1C3D308F009B031A /* ASJColoredScrollIndicatorsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASJColoredScrollIndicatorsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0DEEFB11C3D308F009B031A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C0DEEFB31C3D308F009B031A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		C0DEEFB71C3D308F009B031A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C0DEEFBA1C3D308F009B031A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0DEEFBC1C3D3090009B031A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C0DEEFBF1C3D3090009B031A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0DEEFC11C3D3090009B031A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0DEEFC81C3D3162009B031A /* ASJTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASJTableView.h; sourceTree = "<group>"; };
 		C0DEEFC91C3D3162009B031A /* ASJTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASJTableView.m; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 				C0DEEFB71C3D308F009B031A /* ViewController.m */,
 				C0DEEFB91C3D308F009B031A /* Main.storyboard */,
 				C0DEEFBC1C3D3090009B031A /* Assets.xcassets */,
-				C0DEEFBE1C3D3090009B031A /* LaunchScreen.storyboard */,
+				6BA7A6521C5F18A0008B47FA /* LaunchScreen.xib */,
 				C0DEEFC11C3D3090009B031A /* Info.plist */,
 				C0DEEFB01C3D308F009B031A /* Supporting Files */,
 			);
@@ -154,8 +154,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0DEEFC01C3D3090009B031A /* LaunchScreen.storyboard in Resources */,
 				C0DEEFBD1C3D3090009B031A /* Assets.xcassets in Resources */,
+				6BA7A6541C5F18A0008B47FA /* LaunchScreen.xib in Resources */,
 				C0DEEFBB1C3D3090009B031A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,20 +178,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		6BA7A6521C5F18A0008B47FA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BA7A6531C5F18A0008B47FA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
 		C0DEEFB91C3D308F009B031A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C0DEEFBA1C3D308F009B031A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C0DEEFBE1C3D3090009B031A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C0DEEFBF1C3D3090009B031A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -233,7 +233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -270,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -281,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ASJColoredScrollIndicatorsExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sudeep.ASJColoredScrollIndicatorsExample;
@@ -292,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ASJColoredScrollIndicatorsExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sudeep.ASJColoredScrollIndicatorsExample;
@@ -318,6 +320,7 @@
 				C0DEEFC61C3D3090009B031A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
