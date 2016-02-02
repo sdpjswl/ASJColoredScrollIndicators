@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "ASJTableView.h"
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet ASJTableView *customTableView;
 
@@ -28,11 +28,11 @@
   // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+#pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  return 50;
+  return 25;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
