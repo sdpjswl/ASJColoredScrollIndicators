@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		6BA7A6541C5F18A0008B47FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA7A6521C5F18A0008B47FA /* LaunchScreen.xib */; };
+		C0C1CBBE1C60DEF1001DC4B3 /* ASJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C1CBBB1C60DEF1001DC4B3 /* ASJScrollView.m */; };
+		C0C1CBBF1C60DEF1001DC4B3 /* ASJTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C1CBBD1C60DEF1001DC4B3 /* ASJTableView.m */; };
 		C0DEEFB21C3D308F009B031A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEEFB11C3D308F009B031A /* main.m */; };
 		C0DEEFB51C3D308F009B031A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEEFB41C3D308F009B031A /* AppDelegate.m */; };
 		C0DEEFB81C3D308F009B031A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEEFB71C3D308F009B031A /* ViewController.m */; };
 		C0DEEFBB1C3D3090009B031A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0DEEFB91C3D308F009B031A /* Main.storyboard */; };
 		C0DEEFBD1C3D3090009B031A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0DEEFBC1C3D3090009B031A /* Assets.xcassets */; };
-		C0DEEFCA1C3D3162009B031A /* ASJTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEEFC91C3D3162009B031A /* ASJTableView.m */; };
-		C0DEEFCD1C3D3170009B031A /* ASJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEEFCC1C3D3170009B031A /* ASJScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6BA7A6531C5F18A0008B47FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C0C1CBBA1C60DEF1001DC4B3 /* ASJScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASJScrollView.h; sourceTree = "<group>"; };
+		C0C1CBBB1C60DEF1001DC4B3 /* ASJScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASJScrollView.m; sourceTree = "<group>"; };
+		C0C1CBBC1C60DEF1001DC4B3 /* ASJTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASJTableView.h; sourceTree = "<group>"; };
+		C0C1CBBD1C60DEF1001DC4B3 /* ASJTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASJTableView.m; sourceTree = "<group>"; };
 		C0DEEFAD1C3D308F009B031A /* ASJColoredScrollIndicatorsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASJColoredScrollIndicatorsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0DEEFB11C3D308F009B031A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C0DEEFB31C3D308F009B031A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,10 +32,6 @@
 		C0DEEFBA1C3D308F009B031A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0DEEFBC1C3D3090009B031A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0DEEFC11C3D3090009B031A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0DEEFC81C3D3162009B031A /* ASJTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASJTableView.h; sourceTree = "<group>"; };
-		C0DEEFC91C3D3162009B031A /* ASJTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASJTableView.m; sourceTree = "<group>"; };
-		C0DEEFCB1C3D3170009B031A /* ASJScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASJScrollView.h; sourceTree = "<group>"; };
-		C0DEEFCC1C3D3170009B031A /* ASJScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASJScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +45,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0C1CBB91C60DEF1001DC4B3 /* ASJColoredScrollIndicators */ = {
+			isa = PBXGroup;
+			children = (
+				C0C1CBBA1C60DEF1001DC4B3 /* ASJScrollView.h */,
+				C0C1CBBB1C60DEF1001DC4B3 /* ASJScrollView.m */,
+				C0C1CBBC1C60DEF1001DC4B3 /* ASJTableView.h */,
+				C0C1CBBD1C60DEF1001DC4B3 /* ASJTableView.m */,
+			);
+			name = ASJColoredScrollIndicators;
+			path = ../../ASJColoredScrollIndicators;
+			sourceTree = "<group>";
+		};
 		C0DEEFA41C3D308F009B031A = {
 			isa = PBXGroup;
 			children = (
@@ -64,7 +76,7 @@
 		C0DEEFAF1C3D308F009B031A /* ASJColoredScrollIndicatorsExample */ = {
 			isa = PBXGroup;
 			children = (
-				C0DEEFC71C3D313B009B031A /* ASJColoredScrollIndicators */,
+				C0C1CBB91C60DEF1001DC4B3 /* ASJColoredScrollIndicators */,
 				C0DEEFB31C3D308F009B031A /* AppDelegate.h */,
 				C0DEEFB41C3D308F009B031A /* AppDelegate.m */,
 				C0DEEFB61C3D308F009B031A /* ViewController.h */,
@@ -85,17 +97,6 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
-		};
-		C0DEEFC71C3D313B009B031A /* ASJColoredScrollIndicators */ = {
-			isa = PBXGroup;
-			children = (
-				C0DEEFC81C3D3162009B031A /* ASJTableView.h */,
-				C0DEEFC91C3D3162009B031A /* ASJTableView.m */,
-				C0DEEFCB1C3D3170009B031A /* ASJScrollView.h */,
-				C0DEEFCC1C3D3170009B031A /* ASJScrollView.m */,
-			);
-			path = ASJColoredScrollIndicators;
-			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -169,9 +170,9 @@
 			files = (
 				C0DEEFB81C3D308F009B031A /* ViewController.m in Sources */,
 				C0DEEFB51C3D308F009B031A /* AppDelegate.m in Sources */,
-				C0DEEFCA1C3D3162009B031A /* ASJTableView.m in Sources */,
+				C0C1CBBF1C60DEF1001DC4B3 /* ASJTableView.m in Sources */,
+				C0C1CBBE1C60DEF1001DC4B3 /* ASJScrollView.m in Sources */,
 				C0DEEFB21C3D308F009B031A /* main.m in Sources */,
-				C0DEEFCD1C3D3170009B031A /* ASJScrollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
