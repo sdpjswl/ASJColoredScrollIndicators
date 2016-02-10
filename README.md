@@ -8,7 +8,7 @@ After coming across [JTSScrollIndicator](https://github.com/jaredsinclair/JTSScr
 
 # Installation
 
-Cocoapods is the preferred way to install this library. Add this command to your `Podfile`:
+CocoaPods is the preferred way to install this library. Add this command to your `Podfile`:
 
 ```
 pod 'ASJColoredScrollIndicators'
