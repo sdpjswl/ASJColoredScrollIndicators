@@ -30,6 +30,10 @@ You may also set the property via `UIAppearance` like so:
 [[ASJTableView appearance] setScrollIndicatorColor:[UIColor redColor]];
 ```
 
+###To-do
+- Add `UICollectionView` and `UITextView`
+- Find a way to combine the four in one class
+
 # License
 
 ASJColoredScrollIndicators is available under the MIT license. See the LICENSE file for more info.
