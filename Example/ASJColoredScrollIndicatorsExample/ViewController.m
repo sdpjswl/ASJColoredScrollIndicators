@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "ASJTableView.h"
 
-@interface ViewController () <UITableViewDataSource>
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet ASJTableView *customTableView;
 
@@ -40,6 +40,13 @@
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
   cell.textLabel.text = [NSString stringWithFormat:@"Row %ld", (long)indexPath.row];
   return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

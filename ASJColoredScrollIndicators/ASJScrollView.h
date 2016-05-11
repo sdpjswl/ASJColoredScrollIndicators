@@ -20,10 +20,10 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 @interface ASJScrollView : UIScrollView
 
-@property (strong, nonatomic) UIColor *scrollIndicatorColor UI_APPEARANCE_SELECTOR;
+@property (nullable, strong, nonatomic) UIColor *scrollIndicatorColor UI_APPEARANCE_SELECTOR;
 
 @end
