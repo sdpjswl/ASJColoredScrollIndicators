@@ -20,7 +20,7 @@ pod 'ASJColoredScrollIndicators'
 You need to subclass either `ASJScrollView` or `ASJTableView` and set this property:
 
 ```objc
-@property (strong, nonatomic) UIColor *scrollIndicatorColor UI_APPEARANCE_SELECTOR;
+@property (nullable, strong, nonatomic) UIColor *scrollIndicatorColor UI_APPEARANCE_SELECTOR;
 ```
 Paints both the horizontal and vertical scroll indicators to the desired color.
 
