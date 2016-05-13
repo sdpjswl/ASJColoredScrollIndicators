@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B74319B1CE593EE00975B71 /* ASJColoredScrollIndicators.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B74319A1CE593EE00975B71 /* ASJColoredScrollIndicators.m */; };
 		6BA7A6541C5F18A0008B47FA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BA7A6521C5F18A0008B47FA /* LaunchScreen.xib */; };
-		C0C1CBBE1C60DEF1001DC4B3 /* ASJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C1CBBB1C60DEF1001DC4B3 /* ASJScrollView.m */; };
-		C0C1CBBF1C60DEF1001DC4B3 /* ASJTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C1CBBD1C60DEF1001DC4B3 /* ASJTableView.m */; };
+		6BF6C0A31CE5B9000021FBB8 /* UIColor+Radiohead.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF6C0A21CE5B9000021FBB8 /* UIColor+Radiohead.m */; };
 		C0DEEFB21C3D308F009B031A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEEFB11C3D308F009B031A /* main.m */; };
 		C0DEEFB51C3D308F009B031A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEEFB41C3D308F009B031A /* AppDelegate.m */; };
 		C0DEEFB81C3D308F009B031A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DEEFB71C3D308F009B031A /* ViewController.m */; };
@@ -18,11 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B7431991CE593EE00975B71 /* ASJColoredScrollIndicators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASJColoredScrollIndicators.h; sourceTree = "<group>"; };
+		6B74319A1CE593EE00975B71 /* ASJColoredScrollIndicators.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASJColoredScrollIndicators.m; sourceTree = "<group>"; };
 		6BA7A6531C5F18A0008B47FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C0C1CBBA1C60DEF1001DC4B3 /* ASJScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASJScrollView.h; sourceTree = "<group>"; };
-		C0C1CBBB1C60DEF1001DC4B3 /* ASJScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASJScrollView.m; sourceTree = "<group>"; };
-		C0C1CBBC1C60DEF1001DC4B3 /* ASJTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASJTableView.h; sourceTree = "<group>"; };
-		C0C1CBBD1C60DEF1001DC4B3 /* ASJTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASJTableView.m; sourceTree = "<group>"; };
+		6BF6C0A11CE5B9000021FBB8 /* UIColor+Radiohead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Radiohead.h"; sourceTree = "<group>"; };
+		6BF6C0A21CE5B9000021FBB8 /* UIColor+Radiohead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Radiohead.m"; sourceTree = "<group>"; };
 		C0DEEFAD1C3D308F009B031A /* ASJColoredScrollIndicatorsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASJColoredScrollIndicatorsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0DEEFB11C3D308F009B031A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C0DEEFB31C3D308F009B031A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,10 +48,8 @@
 		C0C1CBB91C60DEF1001DC4B3 /* ASJColoredScrollIndicators */ = {
 			isa = PBXGroup;
 			children = (
-				C0C1CBBA1C60DEF1001DC4B3 /* ASJScrollView.h */,
-				C0C1CBBB1C60DEF1001DC4B3 /* ASJScrollView.m */,
-				C0C1CBBC1C60DEF1001DC4B3 /* ASJTableView.h */,
-				C0C1CBBD1C60DEF1001DC4B3 /* ASJTableView.m */,
+				6B7431991CE593EE00975B71 /* ASJColoredScrollIndicators.h */,
+				6B74319A1CE593EE00975B71 /* ASJColoredScrollIndicators.m */,
 			);
 			name = ASJColoredScrollIndicators;
 			path = ../../ASJColoredScrollIndicators;
@@ -81,6 +79,8 @@
 				C0DEEFB41C3D308F009B031A /* AppDelegate.m */,
 				C0DEEFB61C3D308F009B031A /* ViewController.h */,
 				C0DEEFB71C3D308F009B031A /* ViewController.m */,
+				6BF6C0A11CE5B9000021FBB8 /* UIColor+Radiohead.h */,
+				6BF6C0A21CE5B9000021FBB8 /* UIColor+Radiohead.m */,
 				C0DEEFB91C3D308F009B031A /* Main.storyboard */,
 				C0DEEFBC1C3D3090009B031A /* Assets.xcassets */,
 				6BA7A6521C5F18A0008B47FA /* LaunchScreen.xib */,
@@ -169,9 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0DEEFB81C3D308F009B031A /* ViewController.m in Sources */,
+				6BF6C0A31CE5B9000021FBB8 /* UIColor+Radiohead.m in Sources */,
 				C0DEEFB51C3D308F009B031A /* AppDelegate.m in Sources */,
-				C0C1CBBF1C60DEF1001DC4B3 /* ASJTableView.m in Sources */,
-				C0C1CBBE1C60DEF1001DC4B3 /* ASJScrollView.m in Sources */,
+				6B74319B1CE593EE00975B71 /* ASJColoredScrollIndicators.m in Sources */,
 				C0DEEFB21C3D308F009B031A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XDH-hC-z3b">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tap to ->-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -17,32 +18,156 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Ax-ri-UwS" customClass="ASJTableView">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
-                                <animations/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YPv-6M-C7D">
+                                <rect key="frame" x="0.0" y="332" width="300" height="268"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="tyB-Bo-ci5"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Esg-aE-zXm"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="4Bm-Ln-ad6"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="yVM-Fh-3qC"/>
                                 </connections>
                             </tableView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LBd-AW-qZj">
+                                <rect key="frame" x="0.0" y="64" width="300" height="268"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">I'll drown my beliefs
+To have your babies
+I'll dress like your niece
+And wash your swollen feet
+
+Just don't leave
+Don't leave
+
+I'm not living
+I'm just killin' time
+Your tiny hands
+Your crazy kitten smile
+
+Just don't leave
+Don't leave
+
+And true love waits
+In haunted attics
+And true love lives
+On lollipops and crisps
+
+Just don't leave
+Don't leave
+
+Don't leave
+Don't leave</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ss6-si-PQF">
+                                <rect key="frame" x="300" y="64" width="300" height="268"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="v0D-CT-LLT"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="SYr-gG-mvA"/>
+                                </connections>
+                            </tableView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vS4-50-Uo5">
+                                <rect key="frame" x="300" y="332" width="300" height="268"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="Yeq-Z7-m0u">
+                                    <size key="itemSize" width="72" height="72"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="radiohead_albums_cell_identifier" id="1vy-Yj-vil">
+                                        <rect key="frame" x="5" y="5" width="72" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n85-6e-AFS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="n85-6e-AFS" secondAttribute="bottom" id="3HI-kN-q1L"/>
+                                            <constraint firstItem="n85-6e-AFS" firstAttribute="top" secondItem="1vy-Yj-vil" secondAttribute="top" id="WMo-fI-b28"/>
+                                            <constraint firstAttribute="trailing" secondItem="n85-6e-AFS" secondAttribute="trailing" id="p1Y-Qe-KHl"/>
+                                            <constraint firstItem="n85-6e-AFS" firstAttribute="leading" secondItem="1vy-Yj-vil" secondAttribute="leading" id="vf1-5M-JYN"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="yFX-UN-yEr"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="eVl-fd-XAd"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Ax-ri-UwS" secondAttribute="bottom" id="2MX-Qo-2sv"/>
-                            <constraint firstAttribute="trailing" secondItem="6Ax-ri-UwS" secondAttribute="trailing" id="CI0-kU-mHd"/>
-                            <constraint firstItem="6Ax-ri-UwS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NOF-N0-sy4"/>
-                            <constraint firstItem="6Ax-ri-UwS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="iMs-xf-6lO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vS4-50-Uo5" secondAttribute="bottom" id="3nU-mM-IhD"/>
+                            <constraint firstItem="Ss6-si-PQF" firstAttribute="leading" secondItem="LBd-AW-qZj" secondAttribute="trailing" id="4hz-Df-JbZ"/>
+                            <constraint firstItem="LBd-AW-qZj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="E2E-Q6-baY"/>
+                            <constraint firstItem="vS4-50-Uo5" firstAttribute="top" secondItem="LBd-AW-qZj" secondAttribute="bottom" id="I1t-L7-9Yi"/>
+                            <constraint firstItem="vS4-50-Uo5" firstAttribute="top" secondItem="Ss6-si-PQF" secondAttribute="bottom" id="KVx-o4-TBR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YPv-6M-C7D" secondAttribute="bottom" id="M4t-MZ-eLi"/>
+                            <constraint firstItem="LBd-AW-qZj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MPm-GP-wTm"/>
+                            <constraint firstItem="YPv-6M-C7D" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="O4I-Ch-Fgo"/>
+                            <constraint firstItem="vS4-50-Uo5" firstAttribute="leading" secondItem="YPv-6M-C7D" secondAttribute="trailing" id="Qp5-E5-K0B"/>
+                            <constraint firstItem="Ss6-si-PQF" firstAttribute="height" secondItem="LBd-AW-qZj" secondAttribute="height" id="TQV-1V-B2h"/>
+                            <constraint firstItem="Ss6-si-PQF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Uee-ix-sEj"/>
+                            <constraint firstAttribute="trailing" secondItem="vS4-50-Uo5" secondAttribute="trailing" id="b1l-xk-6Pl"/>
+                            <constraint firstItem="YPv-6M-C7D" firstAttribute="height" secondItem="LBd-AW-qZj" secondAttribute="height" id="key-WM-y0I"/>
+                            <constraint firstItem="vS4-50-Uo5" firstAttribute="height" secondItem="LBd-AW-qZj" secondAttribute="height" id="pUv-q3-9YS"/>
+                            <constraint firstItem="YPv-6M-C7D" firstAttribute="top" secondItem="LBd-AW-qZj" secondAttribute="bottom" id="qdy-aE-cwT"/>
+                            <constraint firstAttribute="trailing" secondItem="LBd-AW-qZj" secondAttribute="trailing" id="qtm-5K-3cs"/>
+                            <constraint firstItem="YPv-6M-C7D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vfC-H7-WBp"/>
+                            <constraint firstItem="Ss6-si-PQF" firstAttribute="width" secondItem="YPv-6M-C7D" secondAttribute="width" id="w7I-z6-MZn"/>
+                            <constraint firstAttribute="trailing" secondItem="Ss6-si-PQF" secondAttribute="trailing" id="yCo-O5-wPW"/>
+                            <constraint firstItem="YPv-6M-C7D" firstAttribute="width" secondItem="vS4-50-Uo5" secondAttribute="width" id="yqu-eX-w5R"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qtm-5K-3cs"/>
+                                <exclude reference="O4I-Ch-Fgo"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Tap to --&gt;" id="hTX-Ig-Gme">
+                        <barButtonItem key="rightBarButtonItem" title="Flash" id="XeK-zZ-tWM">
+                            <connections>
+                                <action selector="flashIndicators:" destination="BYZ-38-t0r" id="en9-yq-Pfn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="customTableView" destination="6Ax-ri-UwS" id="bnl-hq-IIJ"/>
+                        <outlet property="inRainbowsTableView" destination="YPv-6M-C7D" id="GUQ-MZ-q2c"/>
+                        <outlet property="okComputerTableView" destination="Ss6-si-PQF" id="m7i-n9-F2h"/>
+                        <outlet property="radioheadAlbumsCollectionView" destination="vS4-50-Uo5" id="JIu-CG-eGS"/>
+                        <outlet property="trueLoveWaitsTextView" destination="LBd-AW-qZj" id="geb-E1-iTc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="425" y="430"/>
+            <point key="canvasLocation" x="1139" y="428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="q1O-cD-c5G">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XDH-hC-z3b" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Gwv-Py-nnC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nZq-js-yE0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F1J-Uj-Vg4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="428"/>
         </scene>
     </scenes>
 </document>

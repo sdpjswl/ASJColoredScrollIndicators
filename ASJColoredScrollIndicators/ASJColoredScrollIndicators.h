@@ -1,4 +1,4 @@
-// ASJScrollView.h
+// ASJColoredScrollIndicators.h
 //
 // Copyright (c) 2016 Sudeep Jaiswal
 //
@@ -20,9 +20,11 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-@import UIKit;
+#import <UIKit/UIScrollView.h>
 
-@interface ASJScrollView : UIScrollView
+typedef UIScrollView ASJScrollView;
+
+@interface UIScrollView (ColoredIndicators)
 
 @property (nullable, strong, nonatomic) UIColor *scrollIndicatorColor UI_APPEARANCE_SELECTOR;
 

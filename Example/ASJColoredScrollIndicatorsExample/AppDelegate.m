@@ -7,13 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "ASJTableView.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
-  [[ASJTableView appearance] setScrollIndicatorColor:[UIColor redColor]];
   return YES;
 }
 
