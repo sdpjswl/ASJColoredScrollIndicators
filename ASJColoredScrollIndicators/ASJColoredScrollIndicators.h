@@ -27,6 +27,9 @@ typedef UIScrollView ASJScrollView;
 
 @interface UIScrollView (ColoredIndicators)
 
+/**
+ *  Sets the color for horizontal and vertical scroll indicators. If you use the appearance proxy and set it globally, it will override any other calls made to individual scroll views. Since this a category on UIScrollView, it will work with all subclasses; UITableView, UICollectionView and UITextView. It will also work for any custom made subclasses as well.
+ */
 @property (nullable, strong, nonatomic) UIColor *scrollIndicatorColor UI_APPEARANCE_SELECTOR;
 
 @end

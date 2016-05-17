@@ -11,8 +11,8 @@
 #import "ASJColoredScrollIndicators.h"
 
 // cell identifiers
-static NSString *const kOKComputerCellIdentifier = @"ok_computer_cell_identifier";
-static NSString *const kInRainbowsCellIdentifier = @"in_rainbows_cell_identifier";
+static NSString *const kOKComputerCellIdentifier      = @"ok_computer_cell_identifier";
+static NSString *const kInRainbowsCellIdentifier      = @"in_rainbows_cell_identifier";
 static NSString *const kRadioheadAlbumsCellIdentifier = @"radiohead_albums_cell_identifier";
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource>
