@@ -23,7 +23,7 @@ Import `ASJColoredScrollIndicators.h` and set this property to any `UIScrollView
 ```
 Paints both the horizontal and vertical scroll indicators to the desired color.
 
-You may also set the property via `UIAppearance` to set the color globally, like so:
+You may also set the property via `UIAppearance` to set the color globally:
 
 ```objc
 [UIScrollView appearance].scrollIndicatorColor = [UIColor blueColor];
