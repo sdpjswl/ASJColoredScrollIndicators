@@ -10,7 +10,7 @@ After coming across [JTSScrollIndicator](https://github.com/jaredsinclair/JTSScr
 
 CocoaPods is the preferred way to install this library. Add this command to your `Podfile`:
 
-```
+```ruby
 pod 'ASJColoredScrollIndicators'
 ```
 
@@ -21,6 +21,7 @@ Import `ASJColoredScrollIndicators.h` and set this property to any `UIScrollView
 ```objc
 @property (nullable, strong, nonatomic) UIColor *scrollIndicatorColor UI_APPEARANCE_SELECTOR;
 ```
+
 Paints both the horizontal and vertical scroll indicators to the desired color.
 
 You may also set the property via `UIAppearance` to set the color globally:
@@ -36,12 +37,12 @@ Since this is a category on `UIScrollView`, it works with all subclasses:
 
 # Credits
 
-- To [Shashank Pali](https://github.com/shashankpali) for his perseverence to unite this functionality under a single category
+- To [Shashank Pali](https://github.com/shashankpali) for his perseverence to unite this functionality under a single category.
 
 # To-do
 
-- ~~Add `UICollectionView` and `UITextView`~~
-- ~~Find a way to combine the four in one class~~
+- ~~Add `UICollectionView` and `UITextView`.~~
+- ~~Find a way to combine the four in one class.~~
 
 # License
 
