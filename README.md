@@ -4,7 +4,7 @@ The stock `UIScrollView` provides limited options to customize its scroll indica
 
 After coming across [JTSScrollIndicator](https://github.com/jaredsinclair/JTSScrollIndicator) and looking at its implementation, I felt there could be an easier way to do this. My implementation gets a hold of the scroll indicator objects themselves and paints them to the desired color. I feel this is a much more simple and direct approach.
 
-![alt tag](Screenshot.png)
+![Screenshot(Images/Screenshot.png)
 
 # Installation
 
@@ -34,6 +34,18 @@ Since this is a category on `UIScrollView`, it works with all subclasses:
 - `UITableView`
 - `UICollectionView`
 - `UITextView`
+
+# How it works
+
+`UIScrollView`'s scroll indicators are not publicly available. Looking at its subviews, we find two `UIImageView`s that appear to be the indicators. Each has either their width or height 2.5 pts. Interestingly, no matter whether your view scrolls in both directions, the vertical and horizontal indicator objects are present.
+
+![Indicators](Images/Indicators.png)
+
+So it would seem that modifying these `UIImageView`s would do the job. But no! What I found is that these objects are changed when the scrolling is active; their memory addresses were different. This happens every time. You could check the indicators in `scrollViewDidScroll:` or `scrollViewWillBeginDragging`, the addresses there are the same, but not the same when the `UIScrollView` initially loaded.
+
+When this was clear, the rest was pretty simple. I tried to change the background color of those `UIImageView`s but the effect was not nice; there still was some transparency. I endded up removing the image's color information and setting a background color to the `UIImageView` with some rounding to shape it look like a default indicator. Voilà!
+
+This color change is done exactly once, when the `UIScrollView` is about to be scrolled for the very first time.
 
 # Credits
 
