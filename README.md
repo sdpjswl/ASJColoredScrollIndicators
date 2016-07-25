@@ -43,7 +43,7 @@ Since this is a category on `UIScrollView`, it works with all subclasses:
 
 So it would seem that modifying these `UIImageView`s would do the job. But no! What I found is that these objects are changed when the scrolling is active; their memory addresses were different. This happens every time. You could check the indicators in `scrollViewDidScroll:` or `scrollViewWillBeginDragging`, the addresses there are the same, but not the same when the `UIScrollView` initially loaded.
 
-When this was clear, the rest was pretty simple. I tried to change the background color of those `UIImageView`s but the effect was not nice; there still was some transparency. I endded up removing the image's color information and setting a background color to the `UIImageView` with some rounding to shape it look like a default indicator. Voilà!
+When this was clear, the rest was pretty simple. I tried to change the background color of those `UIImageView`s but the effect was not nice; there still was some transparency. I ended up removing the image's color information and setting a background color to the `UIImageView` with some rounding to shape it look like a default indicator. Voilà!
 
 This color change is done exactly once, when the `UIScrollView` is about to be scrolled for the very first time.
 
