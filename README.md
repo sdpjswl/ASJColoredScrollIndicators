@@ -4,7 +4,7 @@ The stock `UIScrollView` provides limited options to customize its scroll indica
 
 After coming across [JTSScrollIndicator](https://github.com/jaredsinclair/JTSScrollIndicator) and looking at its implementation, I felt there could be an easier way to do this. My implementation gets a hold of the scroll indicator objects themselves and paints them to the desired color. I feel this is a much more simple and direct approach.
 
-![Screenshot(Images/Screenshot.png)
+![Screenshot](Images/Screenshot.png)
 
 # Installation
 
