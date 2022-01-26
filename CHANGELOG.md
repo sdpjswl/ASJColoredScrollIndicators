@@ -1,12 +1,18 @@
 # Change Log
 
-## [1.1](https://github.com/sudeepjaiswal/ASJColoredScrollIndicators/releases/tag/1.1)
+## [1.2](https://github.com/sdpjswl/ASJColoredScrollIndicators/releases/tag/1.1)
+Released on Wednesday, 26 Jan, 2022.
+
+#### Fixed
+* Functionality that was broken by iOS 13 changes.
+
+## [1.1](https://github.com/sdpjswl/ASJColoredScrollIndicators/releases/tag/1.1)
 Released on Monday, 25 Jul, 2016.
 
 #### Added
 * Added 'how it works' section in readme.
 
-## [1.0](https://github.com/sudeepjaiswal/ASJColoredScrollIndicators/releases/tag/1.0)
+## [1.0](https://github.com/sdpjswl/ASJColoredScrollIndicators/releases/tag/1.0)
 Released on Monday, 25 Jul, 2016.
 
 #### Added
@@ -15,7 +21,7 @@ Released on Monday, 25 Jul, 2016.
 #### Updated
 * Minor formatting changes to readme and podspec.
 
-## [0.3](https://github.com/sudeepjaiswal/ASJColoredScrollIndicators/releases/tag/0.3)
+## [0.3](https://github.com/sdpjswl/ASJColoredScrollIndicators/releases/tag/0.3)
 Released on Tuesday, 17 May, 2016.
 
 #### Added
@@ -24,14 +30,14 @@ Released on Tuesday, 17 May, 2016.
 #### Fixed
 * Minor formatting fixes to readme and code.
 
-## [0.2](https://github.com/sudeepjaiswal/ASJColoredScrollIndicators/releases/tag/0.2)
+## [0.2](https://github.com/sdpjswl/ASJColoredScrollIndicators/releases/tag/0.2)
 Released on Friday, 13 May, 2016.
 
 #### Added
 * Refactored classes into a single `UIScrollView` subclasses that works for `UIScrollView`, `UITableView`, `UICollectionView` and `UITextView`.
 * To-do section in readme.
 
-## [0.1](https://github.com/sudeepjaiswal/ASJColoredScrollIndicators/releases/tag/0.1)
+## [0.1](https://github.com/sdpjswl/ASJColoredScrollIndicators/releases/tag/0.1)
 Released on Wednesday, 11 May, 2016.
 
 #### Added
@@ -40,7 +46,7 @@ Released on Wednesday, 11 May, 2016.
 #### Updated
 * Merged pull request #1 from ReadmeCritic.
 
-## [0.0.1](https://github.com/sudeepjaiswal/ASJColoredScrollIndicators/releases/tag/0.0.1)
+## [0.0.1](https://github.com/sdpjswl/ASJColoredScrollIndicators/releases/tag/0.0.1)
 Released on Tuesday, 2 Feb, 2016.
 
 #### Added

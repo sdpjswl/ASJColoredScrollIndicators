@@ -47,6 +47,8 @@ When this was clear, the rest was pretty simple. I tried to change the backgroun
 
 This color change is done exactly once, when the `UIScrollView` is about to be scrolled for the very first time.
 
+Note: Since iOS 13, the indicators are no longer `UIImageView`s but a private subclass of `UIView` called `_UIScrollViewScrollIndicator`.
+
 # Credits
 
 - To [Shashank Pali](https://github.com/shashankpali) for his perseverence to unite this functionality under a single category.
