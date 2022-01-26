@@ -46,67 +46,95 @@ static NSString *const kContentOffsetKeyPath = @"contentOffset";
 
 - (void)setScrollIndicators:(NSSet *)scrollIndicators
 {
-  objc_setAssociatedObject(self, @selector(scrollIndicators), scrollIndicators, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(scrollIndicators), scrollIndicators, OBJC_ASSOCIATION_RETAIN);
 }
 
 - (NSSet *)scrollIndicators
 {
-  return objc_getAssociatedObject(self, @selector(scrollIndicators));
+    return objc_getAssociatedObject(self, @selector(scrollIndicators));
 }
 
 #pragma mark - Content offset KVO
 
 - (void)startListeningContentOffsetChanges
 {
-  [self addObserver:self forKeyPath:kContentOffsetKeyPath options:NSKeyValueObservingOptionNew context:nil];
+    [self addObserver:self forKeyPath:kContentOffsetKeyPath options:NSKeyValueObservingOptionNew context:nil];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
 {
-  if (![keyPath isEqualToString:kContentOffsetKeyPath]) {
-    return;
-  }
-  
-  [self inferScrollIndicators];
-  [self applyScrollIndicatorColor];
-  [self stopListeningContentOffsetChanges];
+    if (![keyPath isEqualToString:kContentOffsetKeyPath]) {
+        return;
+    }
+    
+    [self inferScrollIndicators];
+    [self applyScrollIndicatorColor];
+    [self stopListeningContentOffsetChanges];
 }
 
 - (void)inferScrollIndicators
 {
-  // infer subviews w/o indicators
-  self.showsHorizontalScrollIndicator = NO;
-  self.showsVerticalScrollIndicator = NO;
-  NSSet *subviewsWithoutIndicator = [NSSet setWithArray:self.subviews];
-  
-  // infer subviews w/ indicators
-  self.showsHorizontalScrollIndicator = YES;
-  self.showsVerticalScrollIndicator = YES;
-  NSMutableSet *subviewsWithIndicator = [NSMutableSet setWithArray:self.subviews];
-  
-  // filter common subviews
-  [subviewsWithIndicator minusSet:subviewsWithoutIndicator];
-  
-  // all that remain are indicators
-  self.scrollIndicators = [NSSet setWithSet:subviewsWithIndicator];
+    // infer subviews w/o indicators
+    self.showsHorizontalScrollIndicator = NO;
+    self.showsVerticalScrollIndicator = NO;
+    NSSet *subviewsWithoutIndicator = [NSSet setWithArray:self.subviews];
+    
+    // infer subviews w/ indicators
+    self.showsHorizontalScrollIndicator = YES;
+    self.showsVerticalScrollIndicator = YES;
+    NSMutableSet *subviewsWithIndicator = [NSMutableSet setWithArray:self.subviews];
+    
+    // filter common subviews
+    [subviewsWithIndicator minusSet:subviewsWithoutIndicator];
+    
+    // all that remain are indicators
+    self.scrollIndicators = [NSSet setWithSet:subviewsWithIndicator];
 }
 
 - (void)stopListeningContentOffsetChanges
 {
-  [self removeObserver:self forKeyPath:kContentOffsetKeyPath];
+    [self removeObserver:self forKeyPath:kContentOffsetKeyPath];
 }
 
 #pragma mark - Apply color
 
 - (void)applyScrollIndicatorColor
 {
-  for (UIImageView *indicator in self.scrollIndicators)
-  {
-    indicator.image = [indicator.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-    indicator.tintColor = [UIColor clearColor];
-    indicator.layer.cornerRadius = 1.5f;
-    indicator.backgroundColor = self.scrollIndicatorColor;
-  }
+    //
+    // From iOS 13, the indicator is no longer an UIImageView
+    // but of type "_UIScrollViewScrollIndicator" which is a subclass of UIView
+    // https://stackoverflow.com/a/40890158
+    //
+    for (id object in self.scrollIndicators)
+    {
+        if ([object isKindOfClass:[UIImageView class]])
+        {
+            UIImageView *imageView = (UIImageView *)object;
+            imageView.image = [imageView.image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+            [self applyScrollIndicatorColorTo:imageView];
+        }
+        else
+        {
+            // https://stackoverflow.com/a/19088341
+            NSString *className = @"X1VJU2Nyb2xsVmlld1Njcm9sbEluZGljYXRvcg==";
+            NSData *data = [[NSData alloc] initWithBase64EncodedString:className options:0];
+            NSString *decodedString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            
+            Class class = NSClassFromString(decodedString);
+            if ([object isKindOfClass:class])
+            {
+                UIView *view = (UIView *)object;
+                [self applyScrollIndicatorColorTo:view];
+            }
+        }
+    }
+}
+
+- (void)applyScrollIndicatorColorTo:(__kindof UIView *)view
+{
+    view.tintColor = [UIColor clearColor];
+    view.layer.cornerRadius = 1.5f;
+    view.backgroundColor = self.scrollIndicatorColor;
 }
 
 @end
@@ -117,19 +145,19 @@ static NSString *const kContentOffsetKeyPath = @"contentOffset";
 
 - (void)setScrollIndicatorColor:(UIColor *)scrollIndicatorColor
 {
-  // no need to do anything if nil color
-  if (!scrollIndicatorColor) {
-    return;
-  }
-  
-  objc_setAssociatedObject(self, @selector(scrollIndicatorColor), scrollIndicatorColor, OBJC_ASSOCIATION_RETAIN);
-  
-  [self startListeningContentOffsetChanges];
+    // no need to do anything if nil color
+    if (!scrollIndicatorColor) {
+        return;
+    }
+    
+    objc_setAssociatedObject(self, @selector(scrollIndicatorColor), scrollIndicatorColor, OBJC_ASSOCIATION_RETAIN);
+    
+    [self startListeningContentOffsetChanges];
 }
 
 - (UIColor *)scrollIndicatorColor
 {
-  return objc_getAssociatedObject(self, @selector(scrollIndicatorColor));
+    return objc_getAssociatedObject(self, @selector(scrollIndicatorColor));
 }
 
 @end
